@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Breast Cancer Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    
+    <main class="container">
+        <div class="glass-container">
+            <div class="glow-border"></div>
+            
+            <nav class="navigation">
+                <a href="{{ url_for('home') }}" class="nav-link">Home</a>
+                <a href="{{ url_for('about') }}" class="nav-link active">About</a>
+            </nav>
+            
+            <h1>About Breast Cancer Detection</h1>
+            
+            <div class="content-section">
+                <h2>Understanding Breast Cancer</h2>
+                <p>Breast cancer occurs when cells in the breast grow out of control. These cells usually form a tumor that can often be seen on an x-ray or felt as a lump. Early detection of breast cancer is crucial for successful treatment and improved survival rates.</p>
+            </div>
+
+            <div class="content-section">
+                <h2>Early Detection Saves Lives</h2>
+                <p>Regular screening and early detection are vital in the fight against breast cancer. When breast cancer is detected early, and is in the localized stage, the 5-year relative survival rate is 99%.</p>
+            </div>
+
+            <div class="content-section">
+                <h2>Our Technology</h2>
+                <p>This project utilizes advanced artificial intelligence and deep learning techniques to analyze breast imaging. Our system employs an Attention U-Net architecture, which helps identify potential abnormalities in breast tissue with high precision.</p>
+            </div>
+
+            <div class="content-section">
+                <h2>How It Works</h2>
+                <p>Upload your breast imaging scan, and our AI model will analyze it for potential abnormalities. The system will provide a detailed analysis, highlighting areas of concern and offering preliminary insights about the tissue characteristics.</p>
+            </div>
+
+            <div class="content-section warning">
+                <h2>Important Note</h2>
+                <p>This tool is designed to assist in the detection process but should not replace professional medical diagnosis. Always consult with healthcare professionals for proper medical evaluation and diagnosis.</p>
+            </div>
+
+            <a href="{{ url_for('home') }}" class="back-btn">Back to Home</a>
+        </div>
+    </main>
+</body>
+</html>
