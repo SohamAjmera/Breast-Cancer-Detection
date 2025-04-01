@@ -73,8 +73,6 @@ The app will be available at `http://127.0.0.1:5000/`.
 - Implement real-time predictions via an API.
 - Improve UI with additional styling and user instructions.
 
-## License
-This project is open-source and available under the **MIT License**.
 
 ---
 Feel free to contribute, raise issues, or suggest improvements! 🚀
