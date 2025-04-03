@@ -11,10 +11,11 @@ This Flask-based web application utilizes an **Attention U-Net** segmentation mo
 - **User-Friendly UI:** Simple navigation with a consistent theme across Home, About, and Results pages.
 
 ## Technologies Used
-- **Flask** (for backend and web app functionality)
-- **TensorFlow/Keras** (for model loading and prediction)
-- **HTML, CSS, JavaScript** (for frontend design)
-- **NumPy, OpenCV, TensorFlow Preprocessing** (for image processing)
+- **Flask** - Web framework for the backend.
+- **TensorFlow/Keras** - For loading and using the segmentation model.
+- **HTML, CSS, JavaScript** - For frontend design.
+- **NumPy, OpenCV, TensorFlow Preprocessing** - For image processing.
+- **Jinja2** - For dynamic rendering of results.
 
 ## Model Architecture
 The segmentation model is built using an **Attention U-Net** architecture, which enhances focus on important regions by applying attention mechanisms during segmentation.
@@ -34,14 +35,13 @@ pip install -r requirements.txt
 ```
 
 ### 3. Download the Pretrained Model
-Place the **Attention_UNet_BreastCancer.h5** model file inside the `model/` directory.
+- Place the **Attention_UNet_BreastCancer.h5** model file inside the `model/` directory.
 
 ### 4. Run the Flask App
 ```sh
 python app.py
 ```
-
-The app will be available at `http://127.0.0.1:5000/`.
+- The app will be available at **`http://127.0.0.1:5000/`**.
 
 ## Usage
 1. **Home Page:** Upload a medical image for analysis.
@@ -50,7 +50,23 @@ The app will be available at `http://127.0.0.1:5000/`.
    - The original uploaded image
    - Segmented image output
    - Diagnosis: **Normal, Benign, or Malignant**
-   - Detailed analysis and recommendations
+   - Detailed analysis and recommendations.
+
+## Screenshots  
+### **Home Page**  
+![Home Page](static/images/1.png)
+
+### **Image Upload & Segmentation**  
+![Segmentation](static/images/2.png)
+
+### **Results Page - Diagnosis**  
+![Results](static/images/3.png)
+
+### **Detailed Analysis**  
+![Detailed Result](static/images/4.png)
+
+### **About Page**  
+![About Page](static/images/5.png)
 
 ## File Structure
 ```
@@ -58,6 +74,7 @@ The app will be available at `http://127.0.0.1:5000/`.
 │── 📁 model
 │   └── Attention_UNet_BreastCancer.h5  # Pretrained model
 │── 📁 static
+│   └── 📁 images  # Stores UI screenshots
 │   └── 📁 uploads  # Stores uploaded images and results
 │── 📁 templates
 │   ├── index.html  # Home Page
@@ -68,13 +85,21 @@ The app will be available at `http://127.0.0.1:5000/`.
 │── README.md  # Project documentation
 ```
 
-## Future Improvements
-- Add a heatmap visualization for better interpretability.
-- Implement real-time predictions via an API.
-- Improve UI with additional styling and user instructions.
+## How to Contribute  
+1. Fork the repository  
+2. Create a new branch (`git checkout -b feature-branch`)  
+3. Make your changes and commit (`git commit -m "Added a new feature"`)  
+4. Push to your branch (`git push origin feature-branch`)  
+5. Open a pull request  
 
+## Future Improvements
+- Add a **heatmap visualization** for better interpretability.
+- Implement **real-time predictions via an API**.
+- Improve **UI with additional styling** and user instructions.
+
+## License
+This project is open-source and available under the **MIT License**.
 
 ---
-Feel free to contribute, raise issues, or suggest improvements! 🚀
+**Contributions and feedback are welcome!** 🚀
 
-# Breast-Cancer-Detection
