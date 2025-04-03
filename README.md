@@ -97,8 +97,6 @@ python app.py
 - Implement **real-time predictions via an API**.
 - Improve **UI with additional styling** and user instructions.
 
-## License
-This project is open-source and available under the **MIT License**.
 
 ---
 **Contributions and feedback are welcome!** 🚀
